@@ -1,5 +1,0 @@
-package hangman
-
-func printHangman() {
-
-}
