@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func searchFile(directory, extension string) ([]string, error) {
+func SearchFile(directory, extension string) ([]string, error) {
 	var files []string
 	dir, err := os.Open(directory)
 	if err != nil {
