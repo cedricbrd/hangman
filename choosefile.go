@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func listFilesInDirectory(directory, extension string) ([]string, error) {
+func ListFilesInDirectory(directory, extension string) ([]string, error) {
 	var files []string
 	dir, err := os.Open(directory)
 	if err != nil {
