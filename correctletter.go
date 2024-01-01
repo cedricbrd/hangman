@@ -2,7 +2,7 @@ package hangman
 
 import "strings"
 
-func correctLetter(correctLetters byte, word string) bool {
+func CorrectLetter(correctLetters byte, word string) bool {
 	correctLetters = byte(strings.ToLower(string(correctLetters))[0])
 
 	for _, lettreMot := range word {
