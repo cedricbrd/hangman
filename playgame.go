@@ -55,7 +55,7 @@ func PlayGame() {
 	} else {
 		fichierMots := wordFile
 
-		secretWord, err := randomWord(fichierMots)
+		secretWord, err := RandomWord(fichierMots)
 		if err != nil {
 			fmt.Println("Erreur lors de la lecture du fichier de mots : ", err)
 			return
@@ -125,7 +125,7 @@ func PlayGame() {
 				fmt.Println("Le mot est incorrect!")
 				gameState.AttemptsLeft--
 			}
-		} else if len(guess) == 1 && isLetter(guess) {
+		} else if len(guess) == 1 && IsLetter(guess) {
 			usedLetters := guess[0]
 			fmt.Println("La lettre est correcte ou incorrecte")
 			gameState.UsedLetters += string(usedLetters)
