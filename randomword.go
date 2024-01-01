@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-func randomWord(fichierMots string) (string, error) {
+func RandomWord(fichierMots string) (string, error) {
 	file, err := os.Open(fichierMots)
 	if err != nil {
 		return "", err
